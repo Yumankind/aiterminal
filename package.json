@@ -1,6 +1,6 @@
 {
   "name": "aiterminal",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "description": "AI terminal - Software development in autopilot",
   "main": "/dist/main.cjs",
   "type": "module",
