@@ -180,7 +180,7 @@ const cipherKey =
   "2919c92ae2162429400b7acfe4d8d0f18b6f8ac385e6a6b7a3f2cdc08d2e9535:43c28737c9f80866d9bb769ff7a66d30"; //"]qK)n)G>^E>'[GPGJWw<Az$.A;@k+~";
 const base64PublicKey =
   "eyJrZXlfb3BzIjpbInZlcmlmeSJdLCJleHQiOnRydWUsImt0eSI6IkVDIiwieCI6IjFBNFA1Q3d0MDd2ZFMxeU8zbEI4SHlPdE1KcXV6SmhPM1A5T2pWeFI5TFR2RlhZak52VG10RGNoaXI1anBENFQiLCJ5IjoiYmRvSDZKWTVTV2xzMi14SGtCclNGRDdURmJucDhTU1RxRDBtcmkxWlF6dW5lVk9CNDlyTUZDQ2pzamYtajNRciIsImNydiI6IlAtMzg0In0=";
-const frontendUrl = "https://dotdev.run";
+const frontendUrl = "https://aiterminal.run";
 const apiUrl = process.argv.includes("--dev")
   ? "https://dotdev.powerhouse.workers.dev"
   : process.argv.includes("--local")
@@ -584,10 +584,10 @@ async function verifyLicense() {
 }
 
 function dotDevExplanation() {
-  console.log("Welcome to " + chalk.bold("[⏺︎_] DotDev!"));
+  console.log("Welcome to " + chalk.bold("[⏺︎_] AI Terminal!"));
   console.log("");
   console.log(
-    "DotDev allows you to create and edit software using natural language."
+    "AI Terminal allows you to create and edit software using natural language."
   );
   console.log(chalk.bold("It reduces the time to create software by 98% and increase your productivity by 60x."));
   console.log(
@@ -652,7 +652,7 @@ async function checkLicense() {
     console.log(
       "The " +
         proBanner() +
-        " plan of DotDev allows you to manipulate software on your own computer using the AI terminal without any limits*."
+        " plan of AI Terminal allows you to manipulate software on your own computer without any limits*."
     );
     console.log("It includes:");
     console.log(
@@ -664,7 +664,7 @@ async function checkLicense() {
     console.log("- Automatic code review, suggestions and improvements");
     console.log("- Instant commit message generation");
     console.log("- No monthly or usage fees*");
-    console.log("- Future updates to [⏺︎_] DotDev");
+    console.log("- Future updates of [⏺︎_] AI Terminal");
     console.log("- Support by e-mail " + chalk.dim("- " + supportEmail));
     console.log("");
     console.log(
@@ -708,7 +708,7 @@ async function checkLicense() {
       console.log("We hope to see you soon! Happy coding!");
       console.log(
         chalk.dim(
-          "Pst... check our website. We usually run promotions for the unlimited plan: https://dotdev.run"
+          "Pst... check our website. We usually run promotions for the unlimited plan: https://aiterminal.run"
         )
       );
       process.exit(0);
@@ -1137,7 +1137,7 @@ async function commit() {
 }
 
 async function main() {
-  console.log("[⏺︎_] DOTDEV ::: AI terminal for developers :::");
+  console.log("[⏺︎_] AI Terminal ::: Software development in autopilot :::");
   let noflags = process.argv.filter((arg) => !arg.startsWith("-"));
   let action = noflags[2] ? noflags[2] : "none";
 
@@ -1171,7 +1171,7 @@ async function main() {
   if (debug) console.log("Action:", action);
 
   if (process.argv.includes("--help") || process.argv.includes("-h")) {
-    console.log("Usage: dotdev [action]");
+    console.log("Usage: aiterminal [action]");
     console.log("Actions:");
     console.log("  run\t\tCreate or edit software by request");
     console.log("  test\t\tTest the software in the current folder");
